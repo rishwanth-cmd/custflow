@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customerflow Monitoring</title>
     <style>
-       body {
+        body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(120deg, #4a148c, #ff6f61, #ffca28);
@@ -137,33 +137,32 @@
                 font-size: 0.9em;
             }
         }
-
-
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Customerflow Monitoring</h1>
-        <p class="subtitle">A ML Detection for Customerflow</p>
-        <a href="#" class="button" onclick="showUploadSection()">Get</a>
+    <div class="card">
+        <h1>Customerflow Monitoring</h1>
+        <p>A Machine Learning Detection System for Customerflow</p>
+        <a href="#" class="btn" onclick="showUploadSection()">Get Started</a>
     </div>
 
     <!-- Upload Section -->
     <div class="upload-section">
-        <h1>Upload Image/Video Here</h1>
+        <h2>Upload Image/Video</h2>
         <input type="file" id="file-input" name="file" accept=".png,.jpg,.jpeg,.mp4,.avi" onchange="previewFile()">
-        <button class="upload-button" onclick="document.getElementById('file-input').click()">UPLOAD</button>
+        <button class="upload-button" onclick="document.getElementById('file-input').click()">Choose File</button>
         <div class="upload-preview" id="uploadPreview"></div>
-        <button class="upload-button" onclick="submitForPrediction()">PREDICT</button>
+        <button class="upload-button" onclick="submitForPrediction()">Predict</button>
     </div>
 
     <!-- Prediction Section -->
     <div class="prediction-section">
-        <h2>PREDICTED</h2>
+        <h2>Prediction Result</h2>
         <div class="predict-output" id="predictOutput"></div>
     </div>
 
     <script>
+        // Existing script logic
         function showUploadSection() {
             document.querySelector('.container').style.display = 'none';
             document.querySelector('.upload-section').style.display = 'block';
